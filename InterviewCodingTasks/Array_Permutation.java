@@ -15,7 +15,8 @@ public class Array_Permutation {
     }
 
     public Set<String> permutation(char[] ch) {
-        String str = Arrays.toString(ch).replace(", ", "").replace("[", "").replace("]", "");
+        String str = Arrays.toString(ch).replace(", ", "")
+                .replace("[", "").replace("]", "");
         Set<String> set = new LinkedHashSet<>();
 
         if (str.length() == 1) {
